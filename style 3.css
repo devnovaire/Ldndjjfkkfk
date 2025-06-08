@@ -1,0 +1,353 @@
+/* ======= BASE ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ======= HEADER ======= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background: #000;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #aaa;
+}
+
+/* ======= HERO ======= */
+#hero {
+  padding: 120px 20px;
+  text-align: center;
+  background: #000;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* ======= STATS ======= */
+#stats
+text-align: center;
+
+
+
+
+
+#stats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 20px;
+  background: #111;
+}
+
+.stat h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.stat p {
+  color: #aaa;
+}
+
+/* ======= CLIENTS ======= */
+#clients {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ======= EXPERTISES ======= */
+#expertises {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  padding: 40px;
+  border: 1px solid #444;
+  transition: background 0.3s;
+}
+
+.card:hover {
+  background: #111;
+}
+
+/* ======= RÉALISATIONS ======= */
+#realisations {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.portfolio {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.item {
+  padding: 40px;
+  border: 1px solid #444;
+  transition: background 0.3s;
+}
+
+.item:hover {
+  background: #111;
+}
+
+/* ======= ÉQUIPE ======= */
+#equipe {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.rank-title {
+  font-size: 1.3rem;
+  margin: 40px 0 20px;
+  color: #888;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.member img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ======= NOS RÉSEAUX ======= */
+#reseaux {
+  text-align: center;
+  padding: 80px 20px;
+  background: #000;
+  color: #fff;
+}
+
+#reseaux h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#reseaux p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+.x-logo-link {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.x-logo-link:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.x-logo {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M747 508l427-508h-100l-372 443L389 0H0l448 663L27 1227h101l398-475 432 475h239L747 508zm-147 175l-46-53L135 86h203l408 466 46 53 426 489H966L600 683z"/></svg>') no-repeat center / contain;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M747 508l427-508h-100l-372 443L389 0H0l448 663L27 1227h101l398-475 432 475h239L747 508zm-147 175l-46-53L135 86h203l408 466 46 53 426 489H966L600 683z"/></svg>') no-repeat center / contain;
+  background-color: white;
+}
+
+/* ======= CONTACT ======= */
+#contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 15px;
+  background: #111;
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  padding: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  #stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .grid,
+  .portfolio,
+  .clients-logos,
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member {
+    width: 100%;
+  }
+
+  .card, .item {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .stat h2 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .card, .item {
+    padding: 40px 20px;
+  }
+
+  .member img {
+    height: 180px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  #hero {
+    padding: 60px 20px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
